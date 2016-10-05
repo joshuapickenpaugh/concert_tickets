@@ -110,13 +110,33 @@
 
     End Sub
 
-    Public Function GetTotalNumTix()
+    Public Function GetTotalNumTix() As Integer
 
         Dim numTix As Integer
 
         numTix = _intNumTixBox + _intNumTixPav + _intNumTixLawn
 
         Return numTix
+
+    End Function
+
+    Public Function GetTotalPrice() As Integer
+
+        Dim ttlPrice As Integer
+
+        If _bolBox = True Then
+            ttlPrice = _intNumTixBox * INT_BOX_SEATS
+        End If
+
+        If _bolPav = True Then
+            ttlPrice = ttlPrice + (_intNumTixPav * INT_PAVILION_SEATS)
+        End If
+
+        If _bolLawn = True Then
+            ttlPrice = ttlPrice + (_intNumTixLawn * INT_LAWN_SEATS)
+        End If
+
+        Return ttlPrice
 
     End Function
 

@@ -23,12 +23,12 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.chkBox = New System.Windows.Forms.CheckBox()
-        Me.chkPavilion = New System.Windows.Forms.CheckBox()
-        Me.chkLawn = New System.Windows.Forms.CheckBox()
-        Me.txtNumBox = New System.Windows.Forms.TextBox()
-        Me.txtNumPavilion = New System.Windows.Forms.TextBox()
         Me.txtNumLawn = New System.Windows.Forms.TextBox()
+        Me.txtNumPavilion = New System.Windows.Forms.TextBox()
+        Me.txtNumBox = New System.Windows.Forms.TextBox()
+        Me.chkLawn = New System.Windows.Forms.CheckBox()
+        Me.chkPavilion = New System.Windows.Forms.CheckBox()
+        Me.chkBox = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTtlTickets = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -54,25 +54,29 @@ Partial Class frmMain
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tickets:"
         '
-        'chkBox
+        'txtNumLawn
         '
-        Me.chkBox.AutoSize = True
-        Me.chkBox.Location = New System.Drawing.Point(22, 30)
-        Me.chkBox.Name = "chkBox"
-        Me.chkBox.Size = New System.Drawing.Size(44, 17)
-        Me.chkBox.TabIndex = 0
-        Me.chkBox.Text = "&Box"
-        Me.chkBox.UseVisualStyleBackColor = True
+        Me.txtNumLawn.Location = New System.Drawing.Point(91, 80)
+        Me.txtNumLawn.Name = "txtNumLawn"
+        Me.txtNumLawn.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumLawn.TabIndex = 5
+        Me.txtNumLawn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'chkPavilion
+        'txtNumPavilion
         '
-        Me.chkPavilion.AutoSize = True
-        Me.chkPavilion.Location = New System.Drawing.Point(22, 56)
-        Me.chkPavilion.Name = "chkPavilion"
-        Me.chkPavilion.Size = New System.Drawing.Size(63, 17)
-        Me.chkPavilion.TabIndex = 1
-        Me.chkPavilion.Text = "&Pavilion"
-        Me.chkPavilion.UseVisualStyleBackColor = True
+        Me.txtNumPavilion.Location = New System.Drawing.Point(91, 54)
+        Me.txtNumPavilion.Name = "txtNumPavilion"
+        Me.txtNumPavilion.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumPavilion.TabIndex = 4
+        Me.txtNumPavilion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtNumBox
+        '
+        Me.txtNumBox.Location = New System.Drawing.Point(91, 28)
+        Me.txtNumBox.Name = "txtNumBox"
+        Me.txtNumBox.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumBox.TabIndex = 3
+        Me.txtNumBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'chkLawn
         '
@@ -84,29 +88,25 @@ Partial Class frmMain
         Me.chkLawn.Text = "&Lawn"
         Me.chkLawn.UseVisualStyleBackColor = True
         '
-        'txtNumBox
+        'chkPavilion
         '
-        Me.txtNumBox.Location = New System.Drawing.Point(91, 28)
-        Me.txtNumBox.Name = "txtNumBox"
-        Me.txtNumBox.Size = New System.Drawing.Size(100, 20)
-        Me.txtNumBox.TabIndex = 3
-        Me.txtNumBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.chkPavilion.AutoSize = True
+        Me.chkPavilion.Location = New System.Drawing.Point(22, 56)
+        Me.chkPavilion.Name = "chkPavilion"
+        Me.chkPavilion.Size = New System.Drawing.Size(63, 17)
+        Me.chkPavilion.TabIndex = 1
+        Me.chkPavilion.Text = "&Pavilion"
+        Me.chkPavilion.UseVisualStyleBackColor = True
         '
-        'txtNumPavilion
+        'chkBox
         '
-        Me.txtNumPavilion.Location = New System.Drawing.Point(91, 54)
-        Me.txtNumPavilion.Name = "txtNumPavilion"
-        Me.txtNumPavilion.Size = New System.Drawing.Size(100, 20)
-        Me.txtNumPavilion.TabIndex = 4
-        Me.txtNumPavilion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'txtNumLawn
-        '
-        Me.txtNumLawn.Location = New System.Drawing.Point(91, 80)
-        Me.txtNumLawn.Name = "txtNumLawn"
-        Me.txtNumLawn.Size = New System.Drawing.Size(100, 20)
-        Me.txtNumLawn.TabIndex = 5
-        Me.txtNumLawn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.chkBox.AutoSize = True
+        Me.chkBox.Location = New System.Drawing.Point(22, 30)
+        Me.chkBox.Name = "chkBox"
+        Me.chkBox.Size = New System.Drawing.Size(44, 17)
+        Me.chkBox.TabIndex = 0
+        Me.chkBox.Text = "&Box"
+        Me.chkBox.UseVisualStyleBackColor = True
         '
         'Label1
         '
